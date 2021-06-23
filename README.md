@@ -7,7 +7,9 @@
 
 6-15 开始学习opencv图像操作,包括: 
 cv2读取图片(cv2.imread),从图片中切出指定部分(img[y0:y1, x0:x1]),像素坐标都是从上到下从左到右,先y后x,图像保存与导出(cv2.imwrite),
-图片格式转换(RGB,BGR,GRAY)(cv2.cvtColor),高斯模糊(cv2.GaussianBlur),二值化(cv2.threshold),找轮廓(cv2.findContours),
+图片格式转换(RGB,BGR,GRAY)(cv2.cvtColor),高斯模糊(cv2.GaussianBlur),二值化(cv2.threshold),找轮廓(cv2.findContours),画灰度图要加cmap='gray'
 
+6-16 拿到真实数据(延迟量二分类),分割处理图片,先手动把左上角和右下角的无用信息截掉,然后把大图分割成很多小图,提取标签y,将其保存为.pt文件,为之后的网络训练准备数据
+torchvision.transforms.ToTensor()可以把通道放第一位(H, W, C) -> (C, H, W)
 
-
+6-18 搭建CNN模型,把数据集分为训练集与测试集,训练模型,尝试了图片增强(上下翻转,左右翻转)与灰度图,效果一般
