@@ -67,7 +67,7 @@ using namspace:命名空间,一些规定好的类名,比如using namspace std �
 
 1.dd
 2.ff
-- dd
+* dd
 
 
 
