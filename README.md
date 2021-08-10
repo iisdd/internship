@@ -1,3 +1,20 @@
+核心函数: 
+
+split.py(输入大图切成小图保存,输出切出的小图数量),
+
+txt2csv.py(把包含label y的txt转成csv), 
+
+gen_dataset.py(把图片和label都转成tensor,然后切成训练集和测试集), 
+
+model.py(CNN模型), 
+
+train.py(训练并画出中间层特征图), 
+
+visualize.py(可视化模块,用TSN-E把CNN抽出来的特征降维成2维进行聚类展示), 
+
+main.py(把以上功能集成到了主程序里,一键训练出图,只需要改文件地址).
+
+
 # 2021-06-10~
 记录一下暑假实习做的项目
 
