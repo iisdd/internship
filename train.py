@@ -62,14 +62,14 @@ def train(train_x, test_x, train_y, test_y, pic_px, n_o,
 
 
     plt.figure()                            # 卷一次特征
-    plt.title('mid features')
+    plt.title('mid features 1')
     for i in range(1, 17):
         ax = plt.subplot(4, 4, i)
         plt.imshow(mid_1[i-1, :, :], cmap='gray')
     plt.show()
 
     plt.figure()                            # 卷两次特征
-    plt.title('mid features')
+    plt.title('mid features 2')
     for i in range(1, 33):
         ax = plt.subplot(4, 8, i)
         plt.imshow(mid_2[i-1, :, :], cmap='gray')
