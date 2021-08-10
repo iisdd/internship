@@ -69,7 +69,7 @@ torchvision.transforms.ToTensor()可以把通道放第一位(H, W, C) -> (C, H, 
 
 * const定义变量，保证变量永远不变，后面接的东西都不能改（比如接指针const int * p = &a）这就固定了p只能指向a的内存地址，不能改
 
-
+* cout:console out,cout << XXX << XXX << endl; 后面加endl代表结束此行并换行
 
 
 
