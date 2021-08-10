@@ -16,7 +16,7 @@ main.py(把以上功能集成到了主程序里,一键训练出图,只需要改�
 
 
 ## 聚类结果图
-![image](https://github.com/iisdd/internship/blob/main/upload_pic/3%20bit(plr).jpg)
+![image](https://github.com/iisdd/internship/blob/main/upload_pic/3-bits.jpg)
 
 
 
