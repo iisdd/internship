@@ -21,3 +21,8 @@ torchvision.transforms.ToTensor()可以把通道放第一位(H, W, C) -> (C, H, 
 6-23 整理之前的代码,简化上传github,制作整体流程图&CNN原理PPT
 
 6-24 拿掉CNN最后一层,把原来FC的输入拿出来做降维,把分类结果可视化,偏振角的图可以分成8类(大小2 * 颜色4)
+
+
+
+
+核心函数: split.py(输入大图切成小图保存,输出切出的小图数量), txt2csv.py(把包含label y的txt转成csv)
