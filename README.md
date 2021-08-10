@@ -14,6 +14,8 @@ visualize.py(可视化模块,用TSN-E把CNN抽出来的特征降维成2维进行
 
 main.py(把以上功能集成到了主程序里,一键训练出图,只需要改文件地址).
 
+
+## 聚类结果图
 ![image](https://github.com/iisdd/internship/blob/main/upload_pic/3%20bit(plr).jpg)
 
 
