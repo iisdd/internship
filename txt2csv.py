@@ -1,15 +1,15 @@
 # 把txt里的结果转成csv保存
 import pandas as pd
 
-filename = '20210612-5.txt'
-x = pd.read_csv(filename, sep = '	', header=None, names=['x','y','z','delay','plr'])
+def txt2csv(txt_name, output_file_name, index=['x','y','z','delay','plr'], delay=[50, 100], plr=[5, 20, 35, 50]):
+    data = pd.read_csv(txt_name, sep='	', header=None, names=index)
+    data['delay']=data['delay'].replace(delay[0],0)
+    data['delay']=data['delay'].replace(delay[1],1)
 
-x['delay']=x['delay'].replace(50,0)
-x['delay']=x['delay'].replace(100,1)
+    data['plr']=data['plr'].replace(plr[0],0)
+    data['plr']=data['plr'].replace(plr[1],1)
+    data['plr']=data['plr'].replace(plr[2],2)
+    data['plr']=data['plr'].replace(plr[3],3)
 
-x['plr']=x['plr'].replace(5,0)
-x['plr']=x['plr'].replace(20,1)
-x['plr']=x['plr'].replace(35,2)
-x['plr']=x['plr'].replace(50,3)
-# 最后一行标签不对
-x[:1290].to_csv(r'y.csv', index=False)
+    data['decode'] = data['plr'] + data['delay'] * 4      # 用来画聚类图的总标签
+    data.to_csv(output_file_name, index=False)
