@@ -65,6 +65,20 @@ torchvision.transforms.ToTensor()可以把通道放第一位(H, W, C) -> (C, H, 
 
 * 关于include:include<>是包含标准的系统头文件名,只在标准头文件目录里找,include""是包含自己写的头文件，优先在当前目录的头文件里找
 
+* 片段注释：ctrl+k -> 选中段落 -> ctrl+c, 取消注释：ctrl+k -> 选中段落 -> ctrl+u
+
+* const定义变量，保证变量永远不变，后面接的东西都不能改（比如接指针const int * p = &a）这就固定了p只能指向a的内存地址，不能改
+
+
+
+
+
+
+
+
+
+
+
 
 
 
