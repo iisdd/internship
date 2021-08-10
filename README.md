@@ -57,7 +57,11 @@ torchvision.transforms.ToTensor()可以把通道放第一位(H, W, C) -> (C, H, 
 
 7-8 看MM官网说明&软件下载&环境配置
 
+7-9 读DemoCamera源码(4000行真有你的!!!)
 
+7-12 看源码,记录一下看到的杂七杂八的常识
+
+using namspace：命名空间,一些规定好的类名，比如using namspace std 就像 from std import *,本来是std.xxx，现在就能直接用xxx，但是如果用了多个命名空间,变量名就容易起冲突，所以最好是from XXX import xxx, 也就是using std::cin
 
 
 
