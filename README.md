@@ -25,4 +25,5 @@ torchvision.transforms.ToTensor()可以把通道放第一位(H, W, C) -> (C, H, 
 
 
 
-核心函数: split.py(输入大图切成小图保存,输出切出的小图数量), txt2csv.py(把包含label y的txt转成csv)
+核心函数: split.py(输入大图切成小图保存,输出切出的小图数量), txt2csv.py(把包含label y的txt转成csv), gen_dataset.py(把图片和label都转成tensor,然后切成训练集和测试集), 
+model.py(CNN模型),
