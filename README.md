@@ -64,8 +64,9 @@ torchvision.transforms.ToTensor()可以把通道放第一位(H, W, C) -> (C, H, 
 using namspace:命名空间,一些规定好的类名,比如using namspace std 就像 from std import * ,本来是std.xxx，现在就能直接用xxx，但是如果用了多个命名空间,变量名就容易起冲突，所以最好是from XXX import xxx, 也就是std::cin
 
 关于include:include<>是包含标准的系统头文件名,只在标准头文件目录里找,include""是包含自己写的头文件，优先在当前目录的头文件里找
-*1
-*2
+
+1.dd
+2.ff
 
 
 
