@@ -60,15 +60,26 @@ torchvision.transforms.ToTensor()可以把通道放第一位(H, W, C) -> (C, H, 
 7-9 读DemoCamera源码(4000行真有你的!!!)
 
 7-12 看源码,记录一下看到的杂七杂八的常识
-
 * using namspace:命名空间,一些规定好的类名,比如using namspace std 就像 from std import * ,本来是std.xxx，现在就能直接用xxx，但是如果用了多个命名空间,变量名就容易起冲突，所以最好是from XXX import xxx, 也就是std::cin
 * 关于include:include<>是包含标准的系统头文件名,只在标准头文件目录里找,include""是包含自己写的头文件，优先在当前目录的头文件里找
 * 片段注释：ctrl+k -> 选中段落 -> ctrl+c, 取消注释：ctrl+k -> 选中段落 -> ctrl+u
 * const定义变量，保证变量永远不变，后面接的东西都不能改（比如接指针const int * p = &a）这就固定了p只能指向a的内存地址，不能改
 * cout:console out,cout << XXX << XXX << endl; 后面加endl代表结束此行并换行
-* 9/5=1, 9.0/5.0=1.8, 加.自动转成double型
+* 在C++中 9/5=1, 9.0/5.0=1.8, 加.自动转成double型
 * signed:-128 ~ 127, unsigned:0 ~ 255
 * &:取地址, *p:解引用,取地址的值
+
+7-13 生成动态链接库(dll),替换软件中源文件部分,观察软件中变化
+
+7-14 实现打印日志,SDK:里面包括你想要的功能的函数包(ex:抓取图片,设置曝光时间...),API:SDK中函数的接口
+* ->:通过结构体里的指针可以找到结构体中的属性
+* 指针指向数组其实就是指向了第一个元素的地址
+
+7-16 删掉没用的属性(只保留DemoCamera那个类),继续看源码打日志
+
+7-19 阅读相机TUCam的开发手册(Dhyana系列)
+
+7-20 安装相机驱动,连通相机并拍照,int x(5)相当于int x = 5
 
 
 
