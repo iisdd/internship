@@ -132,9 +132,12 @@ torchvision.transforms.ToTensor()可以把通道放第一位(H, W, C) -> (C, H, 
 * semi-supervise-learning:有大量未标注的资料&少量标注的资料,未标注的用来pre-train,例如一句话遮住一个词来填词,标注资料用来fine-tune(具体的任务上用的训练集)
 * python堆模块: heapq(小根堆,最小值在堆顶)
   * 方法:heapify(li):li -> 堆,
-  * dd
+  * heappush(heap, x):把x压入堆
+  * heappop(heap):弹出堆顶元素
+* C++ vector添加元素(append):v.push_back()
+* C++ vector的拼接(extend):v1.insert(v1.end(), v2.begin(), v2.end())
 
-
+8-09 实现中心点排序&图片分割,现在想不保存小图,直接堆成tensor送入模型,但是堆叠tensor(cat)时碰到了报错,一开始的total不能是none,i=1的时候要把small_img赋给total
 
 
 
