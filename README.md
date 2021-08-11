@@ -81,8 +81,24 @@ torchvision.transforms.ToTensor()可以把通道放第一位(H, W, C) -> (C, H, 
 
 7-20 安装相机驱动,连通相机并拍照,int x(5)相当于int x = 5
 
+7-21 python里dir(对象)可以看类的属性和方法
 
+7-23 atof: ascii -> float 字符转数字
+* int转string小技巧
+int x(5);
 
+std::stringstream ss;
+
+std::string str;
+
+ss << x;    // x数据倒给ss
+
+ss >> str;  // ss数据倒给str
+* 查看数据类型
+
+#include <typeinfo>
+
+std::cout << typeid(查看对象).name() << std::endl;
 
 
 
