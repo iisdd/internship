@@ -127,8 +127,12 @@ torchvision.transforms.ToTensor()可以把通道放第一位(H, W, C) -> (C, H, 
 
 8-05 把找轮廓、轮廓排序、图片切割功能移植过来
 
-
-
+8-06 
+* GLUE:NLP上的训练库
+* semi-supervise-learning:有大量未标注的资料&少量标注的资料,未标注的用来pre-train,例如一句话遮住一个词来填词,标注资料用来fine-tune(具体的任务上用的训练集)
+* python堆模块: heapq(小根堆,最小值在堆顶)
+  * 方法:heapify(li):li -> 堆,
+  * dd
 
 
 
