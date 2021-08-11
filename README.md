@@ -85,20 +85,20 @@ torchvision.transforms.ToTensor()可以把通道放第一位(H, W, C) -> (C, H, 
 
 7-23 atof: ascii -> float 字符转数字
 * int转string小技巧
-int x(5);
+  int x(5);
 
-std::stringstream ss;
+  std::stringstream ss;
 
-std::string str;
+  std::string str;
 
-ss << x;    // x数据倒给ss
+  ss << x;    // x数据倒给ss
 
-ss >> str;  // ss数据倒给str
+  ss >> str;  // ss数据倒给str
 * 查看数据类型
 
-#include <typeinfo>
+  #include <typeinfo>
 
-std::cout << typeid(查看对象).name() << std::endl;
+  std::cout << typeid(查看对象).name() << std::endl;
 
 
 
