@@ -92,9 +92,9 @@ torchvision.transforms.ToTensor()可以把通道放第一位(H, W, C) -> (C, H, 
 
   std::string str;
 
-  ss << x;      //x数据倒给ss
+  ss << x;&emsp&emsp&emsp&emsp&emsp//x数据倒给ss
 
-  ss >> str;    //ss数据倒给str
+  ss >> str;&emsp&emsp&emsp//ss数据倒给str
 * 查看数据类型
 
   #include \<typeinfo\>
