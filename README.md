@@ -62,14 +62,13 @@ torchvision.transforms.ToTensor()可以把通道放第一位(H, W, C) -> (C, H, 
 7-12 看源码,记录一下看到的杂七杂八的常识
 
 * using namspace:命名空间,一些规定好的类名,比如using namspace std 就像 from std import * ,本来是std.xxx，现在就能直接用xxx，但是如果用了多个命名空间,变量名就容易起冲突，所以最好是from XXX import xxx, 也就是std::cin
-
 * 关于include:include<>是包含标准的系统头文件名,只在标准头文件目录里找,include""是包含自己写的头文件，优先在当前目录的头文件里找
-
 * 片段注释：ctrl+k -> 选中段落 -> ctrl+c, 取消注释：ctrl+k -> 选中段落 -> ctrl+u
-
 * const定义变量，保证变量永远不变，后面接的东西都不能改（比如接指针const int * p = &a）这就固定了p只能指向a的内存地址，不能改
-
 * cout:console out,cout << XXX << XXX << endl; 后面加endl代表结束此行并换行
+* 9/5=1, 9.0/5.0=1.8, 加.自动转成double型
+* signed:-128~127, unsigned:0~255
+* &:取地址, *p:解引用
 
 
 
