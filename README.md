@@ -97,7 +97,7 @@ torchvision.transforms.ToTensor()可以把通道放第一位(H, W, C) -> (C, H, 
   ss >> str;   //ss数据倒给str
 * 查看数据类型
 
-  #include <typeinfo>
+  #include \<typeinfo\>
 
   std::cout << typeid(查看对象).name() << std::endl;
 
