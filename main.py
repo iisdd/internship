@@ -27,7 +27,7 @@ TEST_SIZE = 0.2                     # 测试集占总数据的比例
 if TYPE == 'delay':
     N_O = len(DELAY)
 elif TYPE == 'plr':
-    N_O = 32
+    N_O = len(PLR)
 elif TYPE == 'both':
     N_O = len(PLR)*len(DELAY)
     
