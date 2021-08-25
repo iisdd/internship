@@ -24,7 +24,13 @@ TYPE = 'plr'                        # 要训练的模型类型
 TEST_SIZE = 0.2                     # 测试集占总数据的比例
 ################ 生成训练集超参数 ##################
 ################### 训练超参数 ####################
-N_O = len(PLR)*len(DELAY) if TYPE=='plr' else len(DELAY)
+if TYPE == 'delay':
+    N_O = len(DELAY)
+elif TYPE == 'plr':
+    N_O = 32
+elif TYPE == 'both':
+    N_O = len(PLR)*len(DELAY)
+    
 LR = 0.0005
 BATCH_SIZE = 16
 EPOCH = 3
@@ -42,6 +48,6 @@ pic_tensor, labels, decode, (train_x, test_x, train_y, test_y) = gen_dataset(pic
 print('\n===================== 模型训练中 ============================')
 cnn = train(train_x, test_x, train_y, test_y, pic_px=PX*2, n_o=N_O, lr=LR, batch_size=BATCH_SIZE, epoch=EPOCH, type=TYPE)
 print('\n===================== 可视化聚类中 ===========================')
-visualize(cnn, input=pic_tensor, label=decode, plot_only=PLOT_ONLY, n_labels=len(DELAY)*len(PLR), title='3-bits')
+visualize(cnn, input=pic_tensor, label=decode, plot_only=PLOT_ONLY, n_labels=N_O, title='3-bits')
 
 
