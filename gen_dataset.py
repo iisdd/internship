@@ -55,8 +55,10 @@ def gen_dataset(pic_path, pic_num, filename, type='plr', test_size=0.2):
     x_d, x_p = pic2tensor(pic_path=pic_path, pic_num=pic_num)
     y_d, y_p, decode = csv2tensor(filename=filename)
     # 注意标签要取和图片一样多的
-    if type == 'delay':     # 返回的标签tensor和所有图片tensor用来输入给cnn出来长向量聚类
+    if type == 'delay':                 # 返回的标签tensor和所有图片tensor用来输入给cnn出来长向量聚类
         # 保持一样长,不一定所有标签都用
-        return x_d, y_d, decode, train_test_split(x_d, y_d[:x_d.shape[0]], test_size=test_size, random_state=42)
+        return x_d, y_d, decode, train_test_split(x_d, y_d[:x_d.shape[0]], test_size=test_size, random_state=14138)
     elif type == 'plr':
-        return x_p, y_p, decode, train_test_split(x_p, decode[:x_p.shape[0]], test_size=test_size, random_state=42)
+        return x_p, y_p, decode, train_test_split(x_p, y_p[:x_p.shape[0]], test_size=test_size, random_state=14138)
+    elif type == 'both':                # 直接从偏振角图片中训练对应标签decode
+        return x_p, y_p, decode, train_test_split(x_p, decode[:x_p.shape[0]], test_size=test_size, random_state=14138)
