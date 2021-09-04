@@ -30,7 +30,7 @@ utils.py(工具箱,包括模型保存&加载以及数据集生成)
 ## 网络结构
 ![NN](https://github.com/iisdd/internship/blob/main/upload_pic/%E7%A5%9E%E7%BB%8F%E7%BD%91%E7%BB%9C.jpg)
 
-# 训练过程
+# 训练过程(3-bits)
 ## Loss曲线
 ![Loss](https://github.com/iisdd/internship/blob/main/upload_pic/Loss.jpg)
 
@@ -39,7 +39,11 @@ utils.py(工具箱,包括模型保存&加载以及数据集生成)
 
 
 ## 聚类结果图
-![image](https://github.com/iisdd/internship/blob/main/upload_pic/3-bits.jpg)
+
+### 1-bit(2类延迟量)
+![1-bit](https://github.com/iisdd/internship/blob/main/upload_pic/1bit.jpg)
+### 3-bits(2类延迟量4类偏振角)
+![3-bits](https://github.com/iisdd/internship/blob/main/upload_pic/3-bits.jpg)
 
 
 
