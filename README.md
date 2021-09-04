@@ -44,7 +44,8 @@ utils.py(工具箱,包括模型保存&加载以及数据集生成)
 ![1-bit](https://github.com/iisdd/internship/blob/main/upload_pic/1bit.jpg)
 ### 3-bits(2类延迟量4类偏振角)
 ![3-bits](https://github.com/iisdd/internship/blob/main/upload_pic/3-bits.jpg)
-
+### 4-bits(2类延迟量8类偏振角)
+![4-bits](https://github.com/iisdd/internship/blob/main/upload_pic/4-bits.jpg)
 
 
 
