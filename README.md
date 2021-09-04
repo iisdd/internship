@@ -24,6 +24,10 @@ utils.py(工具箱,包括模型保存&加载以及数据集生成)
 * 通过神经网络分类光点图并转化为01编码
 * 加上纠错码的辅助还原成原本存储的信息
 
+## 打点示意图
+![save](https://github.com/iisdd/internship/blob/main/upload_pic/%E4%BA%94%E7%BB%B4%E5%AD%98%E5%82%A8.jpg)
+
+
 
 ## 聚类结果图
 ![image](https://github.com/iisdd/internship/blob/main/upload_pic/3-bits.jpg)
@@ -159,4 +163,4 @@ torchvision.transforms.ToTensor()可以把通道放第一位(H, W, C) -> (C, H, 
 
 8-24 训练32偏振角图片分类模型,准确率大概90%,用不了,导出中间层特征图片
 
-
+8-26 交接代码
