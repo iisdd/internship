@@ -29,9 +29,11 @@ utils.py(工具箱,包括模型保存&加载以及数据集生成)
 
 # 训练过程
 ## Loss曲线
+![Loss](https://github.com/iisdd/internship/blob/main/upload_pic/Loss.jpg)
 
 ## 误差曲线
 ![error](https://github.com/iisdd/internship/blob/main/upload_pic/Error.jpg)
+
 
 ## 聚类结果图
 ![image](https://github.com/iisdd/internship/blob/main/upload_pic/3-bits.jpg)
