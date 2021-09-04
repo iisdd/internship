@@ -27,6 +27,9 @@ utils.py(工具箱,包括模型保存&加载以及数据集生成)
 ## 打点示意图
 ![save](https://github.com/iisdd/internship/blob/main/upload_pic/%E4%BA%94%E7%BB%B4%E5%AD%98%E5%82%A8.jpg)
 
+## 网络结构
+![NN](https://github.com/iisdd/internship/blob/main/upload_pic/%E7%A5%9E%E7%BB%8F%E7%BD%91%E7%BB%9C.jpg)
+
 # 训练过程
 ## Loss曲线
 ![Loss](https://github.com/iisdd/internship/blob/main/upload_pic/Loss.jpg)
