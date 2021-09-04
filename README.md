@@ -27,7 +27,11 @@ utils.py(工具箱,包括模型保存&加载以及数据集生成)
 ## 打点示意图
 ![save](https://github.com/iisdd/internship/blob/main/upload_pic/%E4%BA%94%E7%BB%B4%E5%AD%98%E5%82%A8.jpg)
 
+# 训练过程
+## Loss曲线
 
+## 误差曲线
+![error](https://github.com/iisdd/internship/blob/main/upload_pic/Error.jpg)
 
 ## 聚类结果图
 ![image](https://github.com/iisdd/internship/blob/main/upload_pic/3-bits.jpg)
